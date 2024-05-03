@@ -2,7 +2,7 @@ const fs = require('fs');
 const assert = require('assert');
 const { json } = require('stream/consumers');
 
-eval(fs.readFileSync('hybridizedVersion.js')+'');
+eval(fs.readFileSync('code.js')+'');
 
 var graph = {'foo': {'boo': 7},
     'boo': {'foo': 3, 'bar': 2},
